@@ -2,10 +2,7 @@
     <div id="app">
         <main-nav/>
         <div>
-            <h2>Change Set</h2>
-            <input-number v-model="change.id" label="Id:"/>
-            <input-text v-model="change.author" label="Autor (author):"/>
-            <input-text v-model="change.comment" label="Comentario (comment):"/>
+            <change-set :item="change" />
         </div>
         <button @click="log()">LOG</button>
     </div>
@@ -13,8 +10,7 @@
 
 <script>
     import MainNav from './components/MainNav.vue'
-    import InputText from './components/InputText.vue'
-    import InputNumber from './components/InputNumber.vue'
+    import ChangeSet from './components/ChangeSet.vue'
     import {CHANGE} from './assets/change-mock'
 
     export default {
@@ -30,8 +26,7 @@
             }
         },
         components: {
-            InputText,
-            InputNumber,
+            ChangeSet,
             MainNav
         }
     }

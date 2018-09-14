@@ -10,3 +10,13 @@
         props: ['name', 'value', 'placeholder', 'label']
     }
 </script>
+
+<style scoped>
+    div {
+        padding-bottom: 12px;
+    }
+    input {
+        display: block;
+        width: 100%;
+    }
+</style>
