@@ -23,7 +23,7 @@
             return {
                 change: CHANGE
             }
-        },f
+        },
         methods: {
             log() {
                 console.log(this.change);
