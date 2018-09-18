@@ -1,7 +1,8 @@
 <template>
-    <div class="input-field col s12">
-        <label :for="name" >{{label}}</label>
-        <input :name="name" type="number" :value="value" @input="$emit('input', $event.target.value)" :placeholder="placeholder"/>
+    <div>
+        <label :for="name">{{label}}</label>
+        <input :name="name" type="number" :value="value" @input="$emit('input', $event.target.value)"
+               :placeholder="placeholder"/>
     </div>
 </template>
 
@@ -13,10 +14,7 @@
 
 <style scoped>
     div {
-        padding-bottom: 12px;
-    }
-    input {
-        display: block;
-        width: 100%;
+        position: relative;
+        margin-bottom: 12px;
     }
 </style>

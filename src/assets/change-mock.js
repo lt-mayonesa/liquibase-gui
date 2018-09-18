@@ -12,16 +12,18 @@ export const CHANGE = {
     "id": "1",
     "author": "jilopez",
     "comment": "Creacion de tabla para plazos de liberacion de cashin",
-    "preConditions": [{
-        "onFail": "WARN",
-        "onFailMessage": "La tabla Plazo_Liberacion_Cashin ya existe",
-        "not": {
-            "tableExists": {
-                "schemaName": "dbo",
-                "tableName": "Plazo_Liberacion_Cashin"
+    "preConditions": [
+        {
+            "onFail": "WARN",
+            "onFailMessage": "La tabla Plazo_Liberacion_Cashin ya existe",
+            "not": {
+                "tableExists": {
+                    "schemaName": "dbo",
+                    "tableName": "Plazo_Liberacion_Cashin"
+                }
             }
         }
-    }],
+    ],
     "changes": [{
         "createTable": {
             "tableName": "Plazo_Liberacion_Cashin",

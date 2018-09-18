@@ -1,22 +1,22 @@
 <template>
-    <div class="input-field col s12">
-        <label :for="name" >{{label}}</label>
-        <input :name="name" type="text" :value="value" @input="$emit('input', $event.target.value)" :placeholder="placeholder"/>
+    <div>
+        <label :for="name">{{label}}</label>
+        <input :name="name" type="text" :value="value" @input="$emit('input', $event.target.value)"
+               :placeholder="placeholder"/>
+        <small>{{hint}}</small>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['name', 'value', 'placeholder', 'label']
+        props: ['name', 'value', 'placeholder', 'label', 'hint']
     }
 </script>
 
 <style scoped>
     div {
-        padding-bottom: 12px;
+        position: relative;
+        margin-bottom: 12px;
     }
-    input {
-        display: block;
-        width: 100%;
-    }
+
 </style>
