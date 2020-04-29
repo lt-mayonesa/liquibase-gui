@@ -1,5 +1,5 @@
 # liquibase-gui
-graphic user interface for liquibase
+Graphic user interface for liquibase
 
 ## Project setup
 ```
